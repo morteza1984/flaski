@@ -14,3 +14,4 @@ def test_home(client):
     rv = client.get('/')
     assert rv.status_code == 200
     assert b"Hello CI/CD" in rv.data
+
