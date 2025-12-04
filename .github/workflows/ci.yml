@@ -42,4 +42,4 @@ jobs:
     # 4. Tests ausführen
     - name: Run Tests with pytest
       run: |
-        pytest
+        python3 -m pytest
