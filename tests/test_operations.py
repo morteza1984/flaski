@@ -41,6 +41,16 @@ class TestMathOperations(unittest.TestCase):
         with self.assertRaises(ValueError):
             math_operations.sqrt(-1)
 
+    def test_factorial(self):
+        self.assertEqual(math_operations.factorial(0), 1)
+        self.assertEqual(math_operations.factorial(1), 1)
+        self.assertEqual(math_operations.factorial(5), 120)
+
+        with self.assertRaises(ValueError):
+            math_operations.factorial(-1)
+        with self.assertRaises(ValueError):
+            math_operations.factorial(1.5)
+
     def test_is_prime(self):
         self.assertFalse(math_operations.is_prime(1))
         self.assertTrue(math_operations.is_prime(2))
