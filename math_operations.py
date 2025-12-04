@@ -45,25 +45,6 @@ def sqrt(n):
     return n ** 0.5
 
 
-def factorial(n):
-    """
-    Returns the factorial of n.
-    Raises ValueError if n is negative or not an integer.
-    """
-    if n < 0:
-        raise ValueError("Factorial is not defined for negative numbers.")
-    if not isinstance(n, int):
-        raise ValueError("Factorial is only defined for integers.")
-
-    if n == 0 or n == 1:
-        return 1
-
-    result = 1
-    for i in range(2, n + 1):
-        result *= i
-    return result
-
-
 def is_prime(n):
     """
     Returns True if n is a prime number, False otherwise.
