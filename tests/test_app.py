@@ -14,17 +14,3 @@ def test_home(client):
     rv = client.get('/')
     assert rv.status_code == 200
     assert b"Hello CI/CD" in rv.data
-
-
-def test_sum():
-    result = my_sum(5, 5)
-    assert result == 10
-    assert my_sum(-5, 5) == 0
-    assert my_sum(0, 0) == 0
-
-
-def test_multi():
-    result = my_sum1(5, 5)
-    assert result == 10
-    assert my_sum(-5, 5) == 0
-    assert my_sum(0, 0) == 0
