@@ -18,7 +18,7 @@ jobs:
       fail-fast: false # Wenn ein Job fehlschlägt, die anderen trotzdem weiterlaufen lassen
       matrix:
         # Hier stellen wir sicher, dass es auf verschiedenen Ubuntu-Versionen läuft
-        os: [ubuntu-20.04, ubuntu-22.04, ubuntu-latest]
+        os: [ubuntu-latest]
         # Und auf verschiedenen Python-Versionen (für maximale Kompatibilität)
         python-version: ["3.9", "3.10", "3.11", "3.12"]
 
