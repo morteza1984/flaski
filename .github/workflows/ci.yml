@@ -4,9 +4,9 @@ name: Flask CI Pipeline
 # Hier: Bei jedem Push auf 'main' und bei jedem Pull Request.
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main","math" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "main","math" ]
 
 jobs:
   test:
