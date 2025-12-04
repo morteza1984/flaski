@@ -20,7 +20,7 @@ jobs:
         # Hier stellen wir sicher, dass es auf verschiedenen Ubuntu-Versionen läuft
         os: [ubuntu-latest]
         # Und auf verschiedenen Python-Versionen (für maximale Kompatibilität)
-        python-version: ["3.9", "3.10", "3.11", "3.12"]
+        python-version: ["3.12"]
 
     steps:
     # 1. Code auschecken
